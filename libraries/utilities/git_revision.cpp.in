@@ -1,0 +1,14 @@
+#include <stdint.h>
+#include <evolution/utilities/git_revision.hpp>
+
+#define EVOLUTION_GIT_REVISION_SHA "@EVOLUTION_GIT_REVISION_SHA@"
+#define EVOLUTION_GIT_REVISION_UNIX_TIMESTAMP @EVOLUTION_GIT_REVISION_UNIX_TIMESTAMP@
+#define EVOLUTION_GIT_REVISION_DESCRIPTION "@EVOLUTION_GIT_REVISION_DESCRIPTION@"
+
+namespace evolution { namespace utilities {
+
+const char* const git_revision_sha = EVOLUTION_GIT_REVISION_SHA;
+const uint32_t git_revision_unix_timestamp = EVOLUTION_GIT_REVISION_UNIX_TIMESTAMP;
+const char* const git_revision_description = EVOLUTION_GIT_REVISION_DESCRIPTION;
+
+} } // end namespace evolution::utilities
